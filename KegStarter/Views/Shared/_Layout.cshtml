@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="~/Content/favicon.ico">
+    <title>@ViewBag.Title - KegStarter</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/VoteControl.css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/Scripts/VoteControl.js")
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @*@Html.ActionLink("KegStarter", "Index", "Ks", new { area = "" }, new { @class = "navbar-brand" })*@
+                @*@Html.ActionLink("KEGSTARTER", "Index", "Ks", new { area = "" }, new { @class = "navbar-brand kstitle green-dark" })*@
+                <a class="navbar-brand kstitle" href="/"><span class="green-dark">KEG</span><span class="green">STARTER</span></a>
+                @*<a class="navbar-brand kstitle green-dark" href="/Ks">KEGSTARTER</a>*@
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Beer History", "Index", "BeerHistories")</li>
+                    <li>@Html.ActionLink("Voting", "Vote", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            @*<p>&copy; @DateTime.Now.Year - KegStarter</p>*@
+            <div class="broughttoyouby">
+                <img src="~/Content/SuperTedKeg.png" /> <span class="kstitle green-dark"> Brought to you by SuperTed </span><span>&copy; @DateTime.Now.Year</span>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

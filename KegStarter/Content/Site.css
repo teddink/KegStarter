@@ -1,0 +1,63 @@
+﻿@font-face {
+	/*font-family: RNS Baruta Black;*/ 
+    font-family: Kegstarter;
+    src: url('/fonts/rns-b-webfont.eot');
+    src: url('/fonts/rns-b-webfont.eot?#iefix') format('embedded-opentype'),
+            url('/fonts/rns-b-webfont.woff') format('woff'),
+            url('/fonts/rns-b-webfont.ttf') format('truetype'),
+            url('/fonts/rns-b-webfont.svg#barutablack') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.green-dark {
+    color: #0f2105;
+}
+
+.green {
+    color: #2bde73;
+}
+
+.kstitle {
+    font-family: Kegstarter;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    white-space: nowrap;
+    -moz-font-feature-settings: "liga=1";
+    -moz-font-feature-settings: "liga";
+    -ms-font-feature-settings: "liga" 1;
+    -o-font-feature-settings: "liga";
+    font-feature-settings: "liga" 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.broughttoyouby img{
+    height:60px;
+}

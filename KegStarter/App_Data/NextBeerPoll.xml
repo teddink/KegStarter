@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<poll>
+  <question text="What beer would you like next?" />
+  <answer text="Mac and Jacks Two Tun IPA">0</answer>
+  <answer text="Elysian Immortal IPA">4</answer>
+  <answer text="Deschutes Jubelale">1</answer>
+  <answer text="Black Raven Festivus Holiday Ale">5</answer>
+  <answer text="None of the Above">0</answer>
+  <ipaddr dateEntered="2014/10/27 17:26">131.107.192.201</ipaddr>
+</poll>

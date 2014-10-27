@@ -1,0 +1,22 @@
+﻿@using KegStarter.Models
+
+@{
+    ViewBag.Title = "Vote";
+}
+<h2>@ViewBag.Title</h2>
+
+<div class="row">
+    <div style="width: 400px; margin-left: auto; margin-right: auto">
+        @{
+            VoteDataModel nextBeerModel = (VoteDataModel)ViewData[VoteDataModel.GetViewDataName("NextBeer")];
+            nextBeerModel.ControlWidth = 300;
+            Html.RenderPartial("VoteControl", nextBeerModel);
+        }
+        <br />
+        <p style="width:300px">
+            You can get back to the questions by clicking on the <b>Back to Voting</b>
+            link, or see the actual number of votes (instead of the percentages) by
+            clicking on <b>Show Counts</b>
+        </p>
+    </div>
+</div>
